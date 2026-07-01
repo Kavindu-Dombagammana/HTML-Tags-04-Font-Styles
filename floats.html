@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--When used float, the parent ignores the float tags when adding styles-->
+    <!--clearfix class can be used to fix the float problem-->
+    <style>
+        /* "*" This selects whe whole html page and removes the default margin of the webpage"" */
+        *{
+            margin: 0px;
+        }
+      .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+      }
+
+      .left {
+        float: left;
+        padding-right: 30px;
+      }
+      p {
+        font-size: 60px;
+      }
+      .wrapper {
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">home</a>
+    <a href="elements.html">elements</a>
+    <a href="floats.html">float</a><br />
+
+    <div class="wrapper clearfix">
+      <img src="pizza.jpg" width="400px" alt="pizza" class="left" />
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum
+        hic, obcaecati aspernatur impedit nisi autem minima, voluptatibus
+        voluptas non laborum corrupti commodi ut ex quidem fugiat laboriosam
+        dolor quisquam!
+      </p>
+    </div>
+  </body>
+</html>
