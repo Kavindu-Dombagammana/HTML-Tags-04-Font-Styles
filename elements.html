@@ -10,15 +10,28 @@
             width: 600px;
         }
         h1{
-            background-color: cadetblue;
-            width: 300px;
+            background-color: brown;
         }
         #box1{
-            background-color: brown;
+            background-color: violet;
         }
         span{
             background-color: chartreuse;
         }
+        /* Inline or block elements cannot be added for div tags since it doesn't apply for the tags under the div tags but only the div tags */
+        /* #box3{
+            display: inline;
+            background-color: blueviolet;
+        }
+        #box4{
+            display: block;
+        } */
+         .inline{
+            display: inline;
+         }
+         .block{
+            display: block;
+         }
     </style>
 </head>
 <body>
@@ -37,6 +50,18 @@
     <div id="box1">
         <span>Hello</span>
         <span>World02</span>
+    </div>
+
+    <!--Change block level into inline level elements-->
+    <div id="box3">
+        <h1 class="inline">Hello</h1>
+        <h1 class="inline">World 03</h1>
+    </div>
+
+
+    <div id="box4"> 
+        <span class="block">Hello</span>
+        <span class="block">World</span>
     </div>
 </body>
 </html>
